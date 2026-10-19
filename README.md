@@ -120,6 +120,14 @@ npm run build
 
 Make sure tests use a separate test database. Some tests may create or delete records, so don't point them at production data.
 
+## Demo user credentials for testing
+Use the following credentials to use application.
+```
+username: user1@newtonite.com
+password: Demo@123
+```
+
+
 ## Things worth checking before a release
 
 1. Sign in with a test account.
