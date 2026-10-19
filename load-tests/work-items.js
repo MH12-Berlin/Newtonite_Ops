@@ -11,11 +11,11 @@ const TOKEN = __ENV.AUTH_TOKEN;
 export const options = {
   stages: [
     { duration: "1m", target: 5 },
-    { duration: "2m", target: 25 },
-    { duration: "2m", target: 100 },
-    { duration: "2m", target: 250 },
-    { duration: "5m", target: 500 },
-    { duration: "5m", target: 1000 },
+    { duration: "1m", target: 25 },
+    { duration: "1m", target: 100 },
+    { duration: "1m", target: 250 },
+    { duration: "1m", target: 500 },
+    { duration: "1m", target: 1000 },
     { duration: "1m", target: 0 },
   ],
 

@@ -68,14 +68,14 @@ const workItemSchema = new mongoose.Schema(
 
 workItemSchema.index({ team: 1, status: 1, priority: 1, updatedAt: -1 });
 workItemSchema.index({ team: 1, assignee: 1, status: 1, updatedAt: -1 });
-workItemSchema.index(
-  { createdBy: 1, idempotencyKey: 1 },
-  {
-    unique: true,
-    partialFilterExpression: {
-      idempotencyKey: { $type: "string" },
-    },
-  }
-);
+// workItemSchema.index(
+//   { createdBy: 1, idempotencyKey: 1 },
+//   {
+//     unique: true,
+//     partialFilterExpression: {
+//       idempotencyKey: { $type: "string" },
+//     },
+//   }
+// );
 
 export default mongoose.model("WorkItem", workItemSchema);  
